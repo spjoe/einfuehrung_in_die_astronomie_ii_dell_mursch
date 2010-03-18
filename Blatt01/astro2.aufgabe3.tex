@@ -1,0 +1,65 @@
+
+\documentclass[fontsize=12pt,a4paper]{article}
+
+%\usepackage{fullpage}
+\usepackage[ngerman]{babel}
+\usepackage[latin9]{inputenc}
+\usepackage{amsmath}
+
+\addtolength{\voffset}{-50pt}
+\addtolength{\textheight}{600pt}
+
+\title{\bfseries Einführung in die Astronomie II (UE)\\
+Aufgabe 3}
+\author{Camillo Dell'mour, 0628020\\
+Rainer Mursch-Radlgruber, 0828445}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Ionisation aus dem Balmer-Niveau (\(n=2 \to \infty\))}
+
+Es gilt (Dispersionsrelation):
+\[E=\frac{h \cdot c}{\lambda}\]
+\(E\dots\) Energie in \(eV\)\\
+\(\lambda\dots\) Wellenlänge in \(m\)\\
+\(h\dots\) Plancksches Wirkungsquantum, \(h=4.13566733 \times 10^{-15}~eV~s\)\\
+\(c\dots\) Lichtgeschwindigkeit, \(c=2.99792458 \times 10^8~m~s^{-1}\)
+\\\\
+\begin{tabular}{l l l}
+Lyman-Kante (\(n=1 \to \infty\)):&\(\lambda_1=912~\AA\)&\(E_1=13.6~eV\)\\
+Ly-alpha (\(n=2 \to 1\)): & \(\lambda_2=1216~\AA\)&\(E_2=\frac{h \cdot c}{\lambda_2}=10.2~eV\)
+\end{tabular}
+\\\\
+\(\implies E=E_1-E_2=3.4~eV\)
+
+\subsection*{Wellenlänge der Balmer-Kante (\(n=2 \to \infty\))}
+
+\(\lambda=\frac{h \cdot c}{E}=3646.6~\AA\)
+
+\subsection*{Umrechnung (\(eV \to erg \to Joule\))}
+
+\(1~eV=1.602176 \times 10^{-12}~ergs\)\\
+\(1~erg=10^{-7}~J\)
+
+\subsection*{Lyman-Kontinuums-Leuchtkraft \(L_{Lyc}\)\\eines \(42000~K\) heißen Sterns}
+Lyman-Kontinuums-Photonenfluss \(log_{10}(N_L)=49.08~s^{-1}\)\\
+Energie eines Photons im Mittel \(\overline E=49.08eV\)\\\\
+\(
+\begin{array}{l l}
+\implies&L_{Lyc}=10^{49.08} \cdot 20 \cdot 1.60217 \times 10^{-12}~ergs~s^{-1}\\
+&L_{Lyc}=3.8525 \times 10^{38}~ergs~s^{-1}
+\end{array}
+\)
+
+\subsection*{Über 4 Mio. Jahre abgegebene Energie\\der Lyman-Kontinuums-Strahlung}
+\(t=4 \times 10^6~years=1.261 \times 10^{14}~s\)\\\\
+\(
+\begin{array}{l l}
+\implies&E_{Lyc}=3.8525 \times 10^{38} \cdot 1.261 \times 10^{14}~ergs\\
+&E_{Lyc}= 4.858 \times 10^{52}~ergs
+\end{array}
+\)
+\end{document}
