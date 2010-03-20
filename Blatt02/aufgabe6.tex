@@ -1,24 +1,83 @@
 \section{Aufgabe 6}
+F"ur die Expansion einer Supernova-Blase in der Sedov-Taylor Phase gilt:
 \begin{equation}
 R_{SNR,II}(t)=R_I + \left( 2.02 \frac{E_{SN}}{\rho_0} \right) ^{1/5}(t-t_1)^{2/5}
 \end{equation}
+\begin{tabular}{l l}
+\(R_{SNR,II}(t)\)&\(\dots\) Expansionsradius in \(m\)\\
+\(R_I\)&\(\dots\) Expansionsradius am Beginn der Phase in \(m\)\\
+\(E_SN\)&\(\dots\) Explosionsenergie in \(J\)\\
+\(\rho_0\)&\(\dots\) Umgebungsdichte in \(kg \cdot m^{-3}\)\\
+\(t\)&\(\dots\) Dauer der Expansion in \(s\)\\
+\(t_I\)&\(\dots\) Zeit die bis zum Beginn der Phase vergangen ist in \(s\)\\
+\end{tabular}\\
+\\
+F"ur die Expansionsgeschwindigkeit gilt:
 \begin{equation}
-R_I=400 a * 365 \frac{d}{a} * 24 \frac{h}{d} * 60 \frac{min}{h} * 60 \frac{s}{min} * 5000 \frac{km}{s} = 63072000000000 km
+u_{SN,II}(t) = \frac{dR_{SNR,II}(t)}{dt}=\frac{2 \cdot 2.02^{1/5} \left( \frac{E_{SN}}{\rho_0} \right) ^{1/5}}{5(t-t_1)^{3/5}}
 \end{equation}
+Diese beiden Ausdr"ucke sind nun f"ur folgende Werte  zu berechnen:\\
+\(E_{SN}=(0.5,1.0,2.0) \times 10^{51}~ergs = (0.5,1.0,2.0) \times 10^{44}~J\)\\
+\(n_0=(0.01,1.0,100)~cm^{-3}\)\\
+\(t_I=400~years=1.261 \times 10^{10}~s\)\\
+\\
+\(n_0\dots\) Umgebungsdichte in Teilchen pro \(cm^3\)\\
+\\
+F"ur die Berechnung von \(\rho_0\) wird die Masse von Wasserstoff (\(m_H=1.674 \times 10^{-27}~kg\)) verwendet:
 \begin{equation}
-u_{SNR,II}(t) = \frac{dR_{SNR,II}(t)}{dt}=\frac{2 * 2.02^{1/5} \left( \frac{E_{SN}}{\rho_0} \right) ^{1/5}}{5(t-t_1)^{3/5}}
+\rho_0=n_0 \cdot m_H=(0.0167,1.674,167.37) \times 10^{-21}~kg \cdot m^{-3}
 \end{equation}
+\(R_I\) soll durch eine Expansion mit \(5000~km \cdot s^{-1}\) erreicht werden:
 \begin{equation}
-p_0 = \left( 1.66 \times 10^{-26} g/cm^3, 1.66 \times 10^{-24} g/cm^3, 1.66 \times 10^{-22} \right)
+R_I=1.261 \times 10^{10}~s \cdot 5000~km \cdot s^{-1} = 6.3072 \times 10^{13} km
 \end{equation}
+\\
+Ergebnisse:
+\begin{center}
+\begin{tabular}{|r|l|l|l|l|l|l|l|l|l|}
+\multicolumn{10}{c}{\(R_{SNR,II}(t)\)}\\
+\hline
+\(n_0\) & \multicolumn{3}{|c|}{0.01} & \multicolumn{3}{|c|}{1.0} & \multicolumn{3}{|c|}{100}\\
+\hline
+\(E_{SN}~[erg]\) & 0.5 & 1.0 & 2.0 & 0.5 & 1.0 & 2.0 & 0.5 & 1.0 & 2.0\\
+\hline
+\(t~[10^{10}~s]\) & & & & & & & & & \\
+\cline{1-1}
+1 & & & & & & & & & \\
+2 & & & & & & & & & \\
+4 & & & & & & & & & \\
+6 & & & & & & & & & \\
+8 & & & & & & & & & \\
+10 & & & & & & & & & \\
+12 & & & & & & & & & \\
+\hline
+\end{tabular}\\
 \begin{figure}[ht]
 \begin{center}
 \includegraphics{aufgabe6r.eps}
 \end{center}
 \end{figure}
+\begin{tabular}{|r|l|l|l|l|l|l|l|l|l|}
+\multicolumn{10}{c}{\(u_{SN,II}(t)\)}\\
+\hline
+\(n_0\) & \multicolumn{3}{|c|}{0.01} & \multicolumn{3}{|c|}{1.0} & \multicolumn{3}{|c|}{100}\\
+\hline
+\(E_{SN}~[erg]\) & 0.5 & 1.0 & 2.0 & 0.5 & 1.0 & 2.0 & 0.5 & 1.0 & 2.0\\
+\hline
+\(t~[10^{10}~s]\) & & & & & & & & & \\
+\cline{1-1}
+1 & & & & & & & & & \\
+2 & & & & & & & & & \\
+4 & & & & & & & & & \\
+6 & & & & & & & & & \\
+8 & & & & & & & & & \\
+10 & & & & & & & & & \\
+12 & & & & & & & & & \\
+\hline
+\end{tabular}\\
 \begin{figure}[ht]
 \begin{center}
 \includegraphics{aufgabe6u.eps}
 \end{center}
 \end{figure}
-
+\end{center}
