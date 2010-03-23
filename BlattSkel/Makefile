@@ -5,7 +5,7 @@ doc: ${BLATT}.pdf
 
 ${BLATT}.dvi: ${BLATT}.tex
 	latex ${BLATT}
-	bibtex ${BLATT}
+	bibtex ${BLATT} || true
 	latex $^
 	latex $^
 ${BLATT}.ps: ${BLATT}.dvi
