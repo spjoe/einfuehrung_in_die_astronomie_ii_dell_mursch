@@ -3,52 +3,52 @@ set title "T=10000 n=1000"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T10000n1000.tex"
-plot "./zusatz-T10000n1000.data" title ""
+plot "./zusatz-T10000n1000.data" title "" with boxes
 
 set title "T=20000 n=1000"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T20000n1000.tex"
-plot "./zusatz-T20000n1000.data" title ""
+plot "./zusatz-T20000n1000.data" title "" with boxes
 
 set title "T=50000 n=1000"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T50000n1000.tex"
-plot "./zusatz-T50000n1000.data" title ""
+plot "./zusatz-T50000n1000.data" title "" with boxes
 
 set title "T=10000 n=100"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T10000n100.tex"
-plot "./zusatz-T10000n100.data" title ""
+plot "./zusatz-T10000n100.data" title "" with boxes
 
 set title "T=20000 n=100"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T20000n100.tex"
-plot "./zusatz-T20000n100.data" title ""
+plot "./zusatz-T20000n100.data" title "" with boxes
 
 set title "T=50000 n=100"
 set xlabel "Wavelength"
 set ylabel "Intensity"
-set out "zusatz-T50000n100.tex"
-plot "./zusatz-T50000n100.data" title ""
+set out "zusatz-T50000n100.tex" 
+plot "./zusatz-T50000n100.data" title "" with boxes
 
 set title "T=10000 n=10"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T10000n10.tex"
-plot "./zusatz-T10000n10.data" title ""
+plot "./zusatz-T10000n10.data" title "" with boxes
 
 set title "T=20000 n=10"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T20000n10.tex"
-plot "./zusatz-T20000n10.data" title ""
+plot "./zusatz-T20000n10.data" title "" with boxes
 
 set title "T=50000 n=10"
 set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T50000n10.tex"
-plot "./zusatz-T50000n10.data" title ""
+plot "./zusatz-T50000n10.data" title "" with boxes
