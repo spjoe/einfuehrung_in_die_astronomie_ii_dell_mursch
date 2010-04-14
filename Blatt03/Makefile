@@ -17,4 +17,4 @@ ${BLATT}.pdf: ${BLATT}.ps
 zusatz-T10000n1000.tex: zusatz-T10000n1000.data
 	gnuplot zusatz.gplot
 clean:
-	rm -f *.log *.aux *.toc *.pdf *.nav *.out *.snm *.bbl *.blg *.dvi *.ps zusatz-*.tex
+	rm -f *.log *.aux *.toc *.pdf *.nav *.out *.snm *.bbl *.blg *.dvi *.ps zusatz-*.tex *.eps

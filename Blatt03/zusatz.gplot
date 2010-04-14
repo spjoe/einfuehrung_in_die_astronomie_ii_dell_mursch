@@ -52,3 +52,54 @@ set xlabel "Wavelength"
 set ylabel "Intensity"
 set out "zusatz-T50000n10.tex"
 plot "./zusatz-T50000n10.data" title "" with boxes
+
+set terminal postscript eps enhanced color
+
+set title "T=50000 K"
+set border 3
+set boxwidth 0.2
+set key right top
+set ticscale 0
+set xrange [ -1 : 16 ]
+
+set xtics nomirror rotate ( \
+  "O II(3728)"      1,\
+  "Ne III(3869)"      2,\
+  "O III(4363)"      3,\
+  "HE II(4686)"      4,\
+  "H I(4861)"       5,\
+  "O III(5007)"      6,\
+  "N II(5755)"      7,\
+  "He I(5876)"      8,\
+  "S III(6312)"     9,\
+  "H I(6563)"     10,\
+  "N II(6584)"     11,\
+  "S II(6717)"     12,\
+  "S II(6731)"    13,\
+  "Ar III(7135)"     14,\
+  "O II(7325)"    15)
+set ytics nomirror
+set log y
+set xlabel "Wavelength"
+set ylabel "log(Intensity)"
+set out "zusatz-T50000.eps"
+plot 1 noti w l 0,\
+     "./zusatz-T50000n10.data" usi ($1):2       ti "n=10 cm^{-3}"    w boxes fill pattern 2,\
+	 "./zusatz-T50000n100.data" usi ($1+0.25):2      ti "n=100 cm^{-3}"   w boxes fill pattern 3,\
+	 "./zusatz-T50000n1000.data" usi ($1+0.5):2     ti "n=1000 cm^{-3}"  w boxes fill pattern 4
+
+set terminal postscript eps enhanced color
+
+set title "T=20000 K"
+set out "zusatz-T20000.eps"
+plot 1 noti w l 0,\
+     "./zusatz-T20000n10.data" usi ($1):2       ti "n=10 cm^{-3}"    w boxes fill pattern 2,\
+	 "./zusatz-T20000n100.data" usi ($1+0.25):2      ti "n=100 cm^{-3}"   w boxes fill pattern 3,\
+	 "./zusatz-T20000n1000.data" usi ($1+0.5):2     ti "n=1000 cm^{-3}"  w boxes fill pattern 4
+
+set title "T=10000 K"
+set out "zusatz-T10000.eps"
+plot 1 noti w l 0,\
+     "./zusatz-T10000n10.data" usi ($1):2       ti "n=10 cm^{-3}"    w boxes fill pattern 2,\
+	 "./zusatz-T10000n100.data" usi ($1+0.25):2      ti "n=100 cm^{-3}"   w boxes fill pattern 3,\
+	 "./zusatz-T10000n1000.data" usi ($1+0.5):2     ti "n=1000 cm^{-3}"  w boxes fill pattern 4
