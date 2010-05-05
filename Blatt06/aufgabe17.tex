@@ -1,0 +1,36 @@
+\section{Aufgabe 17}
+
+Es gilt:
+\begin{equation}
+n(r,z) = n(0,0) \cdot e^{-\frac{r}{H_r}} \cdot e^{-\frac{z}{H_z}}
+\end{equation}
+\(n(0,0) = 50~cm^{-3} = 5 \times 10^7~m^{-3}\)\\
+\(H_r = 3.5~kpc = 1.08 \times 10^{20}~m\)\\
+\(H_z = 1.0~kpc = 0.31 \times 10^{20}~m\)\\
+\\
+{\bfseries a)}
+\begin{align}
+\Sigma(r) &= \int{n(r,z)}~dr = 2~\int_0^\infty{n(r,z)} = n(0,0)~e^{-\frac{r}{H_r}}~2~\int_0^\infty{e^{-\frac{z}{H_z}}}~dr = 2~n(0,0)~H_z~e^{-\frac{r}{H_r}}\nonumber\\
+&= 2 \cdot 5 \cdot 0.3086 \times 10^{20} \times e^{-\frac{r}{1.08 \times 10^{20}}} m^{-2} = 3.086 \times 10^{27} \cdot e^{-\frac{r}{1.08 \times 10^{20}}} m^{-2}\\
+&= 3.086 \times 10^{23} \cdot e^{-\frac{r}{1.08 \times 10^{20}}} cm^{-2} \nonumber
+\end{align}\\
+{\bfseries b)}\\
+Es gilt:\\
+\(R_{GC} = 8.5~kpc = 2.623 \times 10^{20}~m\)\\
+Atomare Masseneinheit: \(1 u = 1.6605 \times 10^{-27}~kg\)\\
+Masse eines H-Atoms: \(m_H = 1.0079~u\)\\
+Masse eines He-Atoms: \(m_{He} = 4.0026~u\)\\
+Masse der Sonne: \(m_\odot = 1.989 \times 10^{30} kg\)\\
+Die ISM besteht zu ca. 90\% aus Wasserstoff und 10\% aus Helium.
+\begin{align}
+\Sigma(R_{GC}) &= 3.086 \times 10^{27} \cdot e^{\frac{-2.634}{1.08}} = 2.72 \times \times 10^{36}~m^{-2} = 2.72 \times 10^{22}~cm^{-2}\\
+&= 2.59 \times 10^{59} pc^{-2} = 2.59 \times 10^{59} \cdot (0.9\cdot m_H + 0.1\cdot m_{He})~u~pc^{-2}\nonumber\\
+&= 3.386 \times 10^{59}~u~pc^{-2} = 3.386 \times 10^{59} \cdot 1.661 \times 10^{-27}~kg~pc^{-2}\nonumber\\
+&= 5.623 \times 10^{32}~kg~pc^{-2} = 5.623 \times 10^{32}\cdot m_\odot^{-1}~M_\odot~pc^{-2} = 282.7 M_\odot pc^{-2}\nonumber
+\end{align}\\
+{\bfseries c)}\\
+Fläche der Scheibe: \(A(r) = 2~\pi~r\)
+\begin{align}
+m_S &= \int{A(r)~\Sigma(r)~dr} = 4~\pi~n(0,0)~H_z~\int_0^\infty{r~e^{-\frac{r}{H_r}}~dr} = 4~\pi~n(0,0)~H_z~H_r^2\\
+&= 4~\pi~5 \times 10^7 \cdot 0.3086 \times 10^{20} \cdot 1.08^2 \times 10^{40} = 2.262 \times 10^{68}~kg\nonumber
+\end{align}\\
