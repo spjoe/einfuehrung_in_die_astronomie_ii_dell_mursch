@@ -3,7 +3,7 @@ BLATT=BLATTNOSPACE
 
 doc: ${BLATT}.pdf
 
-${BLATT}.dvi: ${BLATT}.tex
+${BLATT}.dvi: ${BLATT}.tex AUFGABEX AUFGABEY AUFGABEZ
 	latex ${BLATT}
 	bibtex ${BLATT} || true
 	latex $^

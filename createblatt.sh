@@ -32,4 +32,8 @@ sed -i "s/AUFGABEY/aufgabe$Y/" blatt.tex
 sed -i "s/AUFGABEZ/aufgabe$Z/" blatt.tex
 mv -v blatt.tex "blatt$1.tex"
 
+sed -i "s/AUFGABEX/aufgabe$X.tex/" Makefile
+sed -i "s/AUFGABEY/aufgabe$Y.tex/" Makefile
+sed -i "s/AUFGABEZ/aufgabe$Z.tex/" Makefile
+
 echo "yuhu fertig, wen alles pass mit svn add Blatt$BLATTNR zum repository hinzufügen"
