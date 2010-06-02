@@ -8,6 +8,8 @@ v_{c} &= \sqrt{2*6.67428 \times 10^{-11} \frac{m^3}{kg ~ s^2}  \frac{8 \times 10
 \end{align}
 
 \subsection{b)}
+Berechnung wenn v gleich bleibt:\\
+Um in der Inneren Kugel einen Durchsatz (Einschlagsmenge von $1 M_\odot/yr$ zu haben muss in allen darüber liegendne Schichten auch diese Einschlagsmenge vorhanden sein, wenn die Geschwindigtkeit gleich bleibt.\\
 \(\Phi_{c} = 1M_\odot/yr = 6.30449\times 10^{22} kg/s\)\\
 \(r=10~kpc\)
 \begin{equation}
@@ -15,6 +17,21 @@ v_{c} &= \sqrt{2*6.67428 \times 10^{-11} \frac{m^3}{kg ~ s^2}  \frac{8 \times 10
 \end{equation}
 \begin{align}
 M_{c} &= \int_{V} \rho(r)dV = \int_{10}^{50} 4 \pi r^2 \rho(r) dr = \int_{10}^{50} 4 \pi r^2 \frac{\Phi_{c}}{4\pi r^2 v_{c}} dr = \int_{10}^{50} \frac{\Phi_{c}}{v_{c}} dr = \frac{\Phi_{c}}{v_{c}}\cdot r \left |_{10}^{50}\right.\nonumber\\
-M_{c}&= \Phi_{c}\cdot \frac{3.0857\times 10^{16}}{309}\cdot(50-10)\nonumber\\
-M_{c}&\approx 2.5 * 10^{38}~kg
+M_{c}&=\frac{ \Phi_{c}}{v_c}\cdot(50kpc-10kpc)\nonumber\\
+M_{c}&=\frac{  6.30449\times 10^{22} kg/s}{371 km/s}\cdot(40 \cdot 3.0856 \times 10^{16} km)\nonumber\\
+M_{c}&\approx 2.1 * 10^{38}~kg\approx 1.1 \times 10^8 M_\odot
+\end{align}
+
+Berechnung fall HVC beschleunigt:\\
+Hier vernachlässige ich die Reibung und sage das v ungestört bis 10kpc weiter fällt. Somit muss ich im oberen Integral v(r) und nicht v(50) verwenden.\\
+\(\Phi_{c} = 1M_\odot/yr = 6.30449\times 10^{22} kg/s\)\\
+\(r=10~kpc\)
+\begin{equation}
+\rho = \frac{m}{V} = \frac{\Phi_{c}}{A~v_{c}} = \frac{\Phi_{c}}{4\pi r^2 v_{c}}
+\end{equation}
+\begin{align}
+M_{c} &= \int_{V} \rho(r)dV = \int_{10}^{50} 4 \pi r^2 \rho(r) dr = \int_{10}^{50} 4 \pi r^2 \frac{\Phi_{c}}{4\pi r^2 v(r)} dr\\
+M_{c} &= \int_{10}^{50} 4 \pi r^2 \frac{\Phi_{c}}{4\pi r^2 \sqrt{2*G*\frac{M_{mw}}{r}}} dr = \frac{\sqrt{2} \Phi_{c} r}{3 \sqrt{\frac{G M}{r}}}\left |_{10}^{50}\right.\nonumber\\
+M_{c}&=\frac{\sqrt{2} \Phi_{c} 50kpc}{3 \sqrt{\frac{G M}{50kpc}}} - \frac{\sqrt{2} \Phi_{c} 10 kpc}{3 \sqrt{\frac{G M}{10kpc}}}\nonumber\\
+M_{c}&\approx 1.58 * 10^{38}~kg\approx 8 \times 10^7 M_\odot
 \end{align}
