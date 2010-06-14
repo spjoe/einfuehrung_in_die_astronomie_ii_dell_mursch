@@ -1,0 +1,10 @@
+set term latex
+set out "graph.tex"
+
+set yrange [0:1]
+
+set xrange [0:1000]
+Mg(x) = exp(0.006 *x)
+Ms(x) = 5/6 * (exp(0.006 *x) - 1)
+Mr(x) = 1/6 * (exp(0.006 *x) - 1)
+plot Mg(x), Ms(x), Mr(x)
