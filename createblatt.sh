@@ -20,9 +20,9 @@ sed -i "s/BLATTSPACE/Blatt $1/" blatt.tex
 sed -i "s/BLATTNOSPACE/blatt$1/" Makefile
 
 
-X=`expr \( $1 \* 3 \) - 2`
-Y=`expr \( $1 \* 3 \) - 1`
-Z=`expr \( $1 \* 3 \)`
+X=`expr \( $1 \* 3 \) - 1`
+Y=`expr \( $1 \* 3 \) - 0`
+Z=`expr \( $1 \* 3 \) + 1`
 echo "\\section{Aufgabe $X}" > aufgabe$X.tex
 echo "\\section{Aufgabe $Y}" > aufgabe$Y.tex
 echo "\\section{Aufgabe $Z}" > aufgabe$Z.tex
