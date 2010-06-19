@@ -1,0 +1,139 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      3761,        130]
+NotebookOptionsPosition[      3401,        113]
+NotebookOutlinePosition[      3740,        128]
+CellTagsIndexPosition[      3697,        125]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"G", 
+    FractionBox["m", "4"]}], 
+   SuperscriptBox["r", "2"]], "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["m", "2"], 
+    FractionBox["GM", 
+     SuperscriptBox["d", "3"]], 
+    RowBox[{"(", 
+     RowBox[{"d", "+", 
+      FractionBox["r", "2"]}], ")"}]}], " ", "-", " ", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"M", " ", 
+      FractionBox["m", "2"]}], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"D", "-", 
+        FractionBox["r", "2"]}], ")"}], "2"]], "G"}]}]}]], "Input",
+ CellChangeTimes->{{3.485923860889753*^9, 3.485924052950821*^9}, {
+  3.485924141028166*^9, 3.485924142458918*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       FractionBox[
+        RowBox[{"G", 
+         FractionBox["m", "4"]}], 
+        SuperscriptBox["r", "2"]], "==", 
+       RowBox[{
+        RowBox[{
+         FractionBox["m", "2"], 
+         FractionBox[
+          RowBox[{"G", " ", "M"}], 
+          SuperscriptBox["d", "3"]], 
+         RowBox[{"(", 
+          RowBox[{"d", "+", 
+           FractionBox["r", "2"]}], ")"}]}], " ", "-", " ", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"M", " ", 
+           FractionBox["m", "2"]}], 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"d", "+", 
+             FractionBox["r", "2"]}], ")"}], "2"]], "G"}]}]}], ",", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"G", 
+         FractionBox["m", "4"]}], 
+        SuperscriptBox["r", "2"]], "==", 
+       RowBox[{
+        RowBox[{
+         FractionBox["m", "2"], 
+         FractionBox[
+          RowBox[{"G", " ", "M"}], 
+          SuperscriptBox["d", "3"]], 
+         RowBox[{"(", 
+          RowBox[{"d", "-", 
+           FractionBox["r", "2"]}], ")"}]}], " ", "-", " ", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"M", " ", 
+           FractionBox["m", "2"]}], 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"d", "-", 
+             FractionBox["r", "2"]}], ")"}], "2"]], "G\:ffff"}]}]}]}], "}"}], 
+    ",", 
+    RowBox[{"{", "M", "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.485924144306375*^9, 3.48592421093423*^9}, {
+  3.485924297781989*^9, 3.485924345385452*^9}, {3.485924413988103*^9, 
+  3.485924414446268*^9}, {3.485924485440985*^9, 3.485924535175113*^9}, {
+  3.485924609466415*^9, 3.485924673089648*^9}, {3.485927234517793*^9, 
+  3.485927255803763*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.485924171673086*^9, 3.485924211549846*^9}, {
+   3.485924301012788*^9, 3.485924346003396*^9}, 3.485924415120011*^9, {
+   3.485924507268504*^9, 3.485924536443582*^9}, {3.485924656595157*^9, 
+   3.485924676337784*^9}, {3.485927235024842*^9, 3.485927237846128*^9}}]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{Automatic, 617}, {Automatic, 110}},
+FrontEndVersion->"7.0 for Linux x86 (32-bit) (November 10, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 661, 23, 62, "Input"],
+Cell[CellGroupData[{
+Cell[1231, 47, 1822, 56, 142, "Input"],
+Cell[3056, 105, 329, 5, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
